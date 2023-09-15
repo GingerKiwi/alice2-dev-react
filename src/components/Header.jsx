@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
     <Image src={logo} alt='square logo of a white rabbit on black background' width={ 100 } marginBottom='1rem' />
-    <Heading color='white' marginBottom='1rem'>
+    <Heading color='purple.400' marginBottom='1rem'>
         The Alice in Wonderland Project
     </Heading>
     <Text fontsize= { 25 } textAlign='center' marginBottom={25}>

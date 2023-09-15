@@ -7,9 +7,25 @@ import { ChakraProvider } from '@chakra-ui/react';
 // 1. Import the extendTheme function
 import { extendTheme } from '@chakra-ui/react'
 
-
+// 1. Using a style object
+// const theme = {
+//   styles: {
+//     global: {
+//       'html, body': {
+//         color: 'gray.600',
+//         lineHeight: 'tall',
+//       },
+//     },
+//   },
+// }
 // 2. Extend the theme to include custom colors, fonts, etc
 const theme = extendTheme({
+  global: {
+    'html, body': {
+      bg: 'blackAlpha.900',
+      lineHeight: 'tall',
+    },
+  },
   fonts: {
     body: `'Alice', serif`,
     h2: `'Share-Tech-Mono', sans-serif`,
