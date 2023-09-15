@@ -6,7 +6,6 @@ import {
   Heading,
   Image,
   Link,
-  ExternalLinkIcon,
   Stack,
   Text,
 //   Box,
@@ -42,7 +41,7 @@ export default function Hero() {
           </Text>
           <Text color={'white'}>NOTE SEPT 15, 2023: THIS SITE IS IN DEVELOPEMENT OVER THE WEEKEND. LINKS/BUTTONS ARE NOT WORKING YET.</Text>
 
-          <Link color={'blue.200'} href='https://github.com/The-Alice-In-Wonderland-Project' isExternal>
+          <Link color={'blue.200'} href='https://github.com/The-Alice-In-Wonderland-Project' >
   GitHub <ExternalLinkIcon mx='2px' />
 </Link>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
