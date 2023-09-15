@@ -46,7 +46,7 @@ export default function Hero() {
               _hover={{
                 bg: 'blue.500',
               }}>
-              Create Project
+              Get Involved!
             </Button>
             <Button rounded={'full'}>How It Works</Button>
           </Stack>
