@@ -37,7 +37,7 @@ export default function Hero() {
             The Alice in Wonderland Project
             </Text>{' '}
           </Heading>
-          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
+          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.100'}>
           Go down the rabbit hole together to learn GitHub workflows and contribute to open-source!
           </Text>
           <Text color={'white'}>NOTE SEPT 15, 2023: THIS SITE IS IN DEVELOPEMENT OVER THE WEEKEND. LINKS/BUTTONS ARE NOT WORKING YET.</Text>
