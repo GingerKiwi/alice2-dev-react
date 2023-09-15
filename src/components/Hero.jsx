@@ -5,6 +5,8 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
+  ExternalLinkIcon,
   Stack,
   Text,
 //   Box,
@@ -38,6 +40,11 @@ export default function Hero() {
           <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
           Go down the rabbit hole together to learn GitHub workflows and contribute to open-source!
           </Text>
+          <Text color={'white'}>NOTE SEPT 15, 2023: THIS SITE IS IN DEVELOPEMENT OVER THE WEEKEND. LINKS/BUTTONS ARE NOT WORKING YET.</Text>
+
+          <Link color={'blue.200'} href='https://github.com/The-Alice-In-Wonderland-Project' isExternal>
+  GitHub <ExternalLinkIcon mx='2px' />
+</Link>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
             <Button
               rounded={'full'}
@@ -49,6 +56,7 @@ export default function Hero() {
               Get Involved!
             </Button>
             <Button rounded={'full'}>How It Works</Button>
+            
           </Stack>
         </Stack>
       </Flex>
