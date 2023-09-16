@@ -4,6 +4,27 @@ import App from './App.jsx';
 import './index.css';
 import { ChakraProvider } from '@chakra-ui/react';
 
+import { Global } from "@emotion/react"
+
+// import { Fonts } from "./Fonts"
+
+const Fonts = () => (
+  <Global
+    styles={`
+      /* Copied from https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap */
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Wonderland';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(../assets/Alice_in_Wonderland_3.ttf);
+      }
+      `}
+  />
+)
+
 // 1. Import the extendTheme function
 import { extendTheme } from '@chakra-ui/react'
 
@@ -28,7 +49,7 @@ const theme = extendTheme({
   },
   fonts: {
     body: `'Alice', serif`,
-    h2: `'Share-Tech-Mono', sans-serif`,
+    heading: `'Wonderland', sans-serif`,
   },
   // colors: {
   //   brand: {
@@ -41,6 +62,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
+      <Fonts />
       <App />
     </ChakraProvider>
   </React.StrictMode>,

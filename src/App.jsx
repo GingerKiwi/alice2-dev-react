@@ -10,10 +10,10 @@ import CallToAction from './components/CallToAction.jsx';
 const App = () => {
   return (
     <>
-    <Hero />
-    <Features />
-    <CallToAction />
-    <Footer />
+      <Hero />
+      <Features />
+      <CallToAction />
+      <Footer />
     {/* <Box bg='blackAlpha.900' color='white' height='800vh' paddingTop={100}>
       <Container centerContent>
       
