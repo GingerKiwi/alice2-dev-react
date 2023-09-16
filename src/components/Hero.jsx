@@ -8,10 +8,10 @@ import {
   Link,
   Stack,
   Text,
-//   Box,
+  Box,
 //   useBreakpointValue,
 } from '@chakra-ui/react'
-// import logo from '../assets/alice-project-logo-128x128-black.png'
+import logo from '../assets/alice-project-logo-128x128-black.png'
 // import wonderland from '../assets/nicole-baster-24JJStvqFLs-unsplash.jpg';
 import githubegg from '../assets/brecht-corbeel-BvAwzPQRRis-unsplash.jpg'
 
@@ -22,15 +22,16 @@ export default function Hero() {
         <Stack spacing={6} w={'full'} maxW={'lg'}>
         
           <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-          {/* <Box boxSize='sm'>
+          
         <Image
+        boxSize='100px'
           alt={'Wonderland pink neon sign'}
-        //   objectFit={'cover'}
+          marginBottom='1rem'
           src={
             logo
           }
         />
-        </Box> */}
+
 
             <Text color={'blue.400'} as={'span'}>
             The Alice in Wonderland Project
