@@ -7,8 +7,8 @@ import {
   Link,
   Stack,
   Text,
-  GridItem,
-  Grid,
+//   GridItem,
+//   Grid,
 //   ExternalLinkIcon,
 } from '@chakra-ui/react'
 import logo from '../assets/alice-project-logo-128x128-black.png'
