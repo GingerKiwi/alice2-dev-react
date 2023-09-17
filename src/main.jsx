@@ -21,7 +21,9 @@ const Fonts = () => (
         font-display: swap;
         src: url(../assets/Alice_in_Wonderland_3.ttf);
       }
-      `}
+      `
+      
+    }
   />
 )
 
