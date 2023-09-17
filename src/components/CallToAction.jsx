@@ -9,7 +9,8 @@ import {
 const CallToAction = () => {
   return (
     <Flex
-    bg="#edf3f8"
+    bg='black'
+    // bg="#edf3f8"
     _dark={{
       bg: "#3e3e3e",
     }}
@@ -19,7 +20,7 @@ const CallToAction = () => {
     justifyContent="center"
   >
     <Box
-      bg="gray.50"
+      bg="black"
       _dark={{
         bg: "gray.800",
       }}
@@ -57,9 +58,9 @@ const CallToAction = () => {
           fontWeight="extrabold"
           letterSpacing="tight"
           lineHeight="shorter"
-          color="gray.900"
+          color="purple.400"
           _dark={{
-            color: "gray.100",
+            color: "purple.100",
           }}
         >
           <chakra.span display="block">Ready to go down the rabbit hole?</chakra.span>
@@ -87,6 +88,7 @@ const CallToAction = () => {
           }}
         >
           <Link
+          as="a" href={'https://forms.gle/NngWuD7txuWhA2Bt5'}
             w={["full","auto"]}
             display="inline-flex"
             alignItems="center"
@@ -98,22 +100,23 @@ const CallToAction = () => {
             rounded="md"
             shadow="md"
             _light={{
-              color: "blue.600",
+              color: "white",
             }}
-            bg="brand.600"
+            bg="blue.400"
             _dark={{
               bg: "brand.500",
             }}
             _hover={{
-              bg: "brand.700",
+              bg: "purple.400",
               _dark: {
                 bg: "brand.600",
               },
             }}
           >
-            New Devs!
+           Alice in Wonderland Project <br></br>2023 Application Form
           </Link>
-          <Link
+          {/* <Link
+          as="a" href={'https://forms.gle/NngWuD7txuWhA2Bt5'}
             w={["full", "auto"]}
             display="inline-flex"
             alignItems="center"
@@ -131,7 +134,7 @@ const CallToAction = () => {
             }}
           >
             Team Leads
-          </Link>
+          </Link> */}
         </Stack>
       </Box>
     </Box>

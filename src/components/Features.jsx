@@ -25,7 +25,7 @@ import {
               _light={{
                 bg: "brand.500",
               }}
-              color="white"
+              color="blue.200"
             >
               <Icon
                 boxSize={6}
@@ -39,6 +39,7 @@ import {
             </Flex>
           </Flex>
           <Box ml={4}>
+            {/* Feature titles */}
             <chakra.dt
               fontSize="lg"
               fontWeight="medium"
@@ -49,6 +50,7 @@ import {
             >
               {props.title}
             </chakra.dt>
+            {/* Feature */}
             <chakra.dd
               mt={2}
               color="gray.500"
@@ -65,7 +67,7 @@ import {
   
     return (
       <Flex
-        bg="blue.100"
+        bg="blue.400"
         _dark={{
           bg: "#3e3e3e",
         }}
@@ -76,7 +78,7 @@ import {
       >
         <Box
           py={12}
-          bg="white"
+          bg="blue.50"
           _dark={{
             bg: "gray.800",
           }}
@@ -132,7 +134,7 @@ import {
                   color: "gray.400",
                 }}
               >
-                The Alice in Wonderland Project seeks to do the seemingly impossible - give new devs real world experience being part of a remote software development team before they have a software development job.
+                The Alice in Wonderland Project seeks to do the seemingly impossible - give new developers real world experience being part of a remote software development team before they have a software development job.
               </chakra.p>
             </Box>
   
@@ -171,28 +173,39 @@ import {
                 <Feature
                   title="Community, diversity and accessibility (A11y) is key! "
                   icon={
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
-                    />
+                    <svg
+                    viewBox="0 0 24 24"
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                        </path>
+                        <circle cx="9" cy="7" r="4">
+                        </circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87">
+                        </path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75">
+                        </path>
+                    </svg>
                   }
                 >
                   We strongly encourage participation from groups that are under represented in tech. Participants will gain a good understanding of coding with an accessibility first mindset - and as part of the developer experience (DevEx). The game will be developed using semantic html and accessible forms. If you need accommodations, please let us know in the application form (ideally), or during Hacktobrfest. 
                   <br></br>
                 </Feature>
                 <Feature
-                  title="New developers: contributors"
+                  title="New developers: Contributors"
                   icon={
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
+                    <svg 
+                    viewBox="0 0 24 24" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg> 
                   }
                 >
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> */}
                     <UnorderedList>
                         <ListItem>Are new developers in training (self-teaching, bootcamp, university students).</ListItem>
                         <ListItem>Minimum skills are basic html (yes, that simple!)</ListItem>
@@ -204,14 +217,16 @@ import {
                 </Feature>
   
                 <Feature
-                  title="Team leads: maintainers"
+                  title="Experienced developers: Team leads/maintainers"
                   icon={
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                    />
+                    <svg 
+                    viewBox="0 0 24 24" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg> 
                   }
                 >
                     <UnorderedList>
@@ -239,12 +254,14 @@ import {
                 <Feature
                   title="Code of conduct: Don't be the Red Queen!"
                   icon={
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
+                    <svg 
+                        viewBox="0 0 24 24"
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
                   }
                 >
                     Note that the <Link src='https://torontojs.com/p/code_of_conduct'>Toronto Javascript Code of Conduct</Link> is being used for the project.
@@ -268,12 +285,14 @@ import {
                 <Feature
                   title="100% Volunteer run project!"
                   icon={
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                    />
+                    <svg 
+                        viewBox="0 0 24 24"
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
                   }
                 >
                     <UnorderedList>
